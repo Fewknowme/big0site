@@ -20,6 +20,7 @@ import {
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
+import imgLogo from "../../img/icons/logo.png";
 
 interface SocialLinkProps {
   href: string;
@@ -56,20 +57,24 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:hr@bigotechnology.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
+              <Language>{t("Address")}</Language>
+              <Para>Eon IT park,</Para>
+              <Para>Pune,</Para>
+              <Para>India</Para>
+              {/* <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
               </Large>
               <Large left="true" to="/">
                 {t("Software Principles")}
-              </Large>
+              </Large> */}
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large left="true" to="/">
                 {t("Support Center")}
@@ -77,15 +82,15 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Customer Support")}
               </Large>
-            </Col>
+            </Col> */}
           </Row>
-          <Row justify="space-between">
+          {/* <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>Eon IT park,</Para>
+              <Para>Pune,</Para>
+              <Para>India</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
@@ -123,24 +128,28 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
-      </FooterSection>
-      <Extra>
         <Container border={true}>
           <Row
             justify="space-between"
             align="middle"
             style={{ paddingTop: "3rem" }}
           >
+            <a
+              style={{ fontWeight: "bold" }}
+              href={`https://www.linkedin.com/company/big-o-technology/`}
+            >
+              Linkedin
+            </a>
+          </Row>
+        </Container>
+      </FooterSection>
+      {/* <Extra>
+        
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
+                <img src={imgLogo} width="100px" height="100px" />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
@@ -169,7 +178,7 @@ const Footer = ({ t }: any) => {
             </FooterContainer>
           </Row>
         </Container>
-      </Extra>
+      </Extra> */}
     </>
   );
 };

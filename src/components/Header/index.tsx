@@ -15,6 +15,7 @@ import {
   Outline,
   Span,
 } from "./styles";
+import imgLogo from "../../img/icons/logo.png";
 
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
@@ -63,7 +64,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <img src={imgLogo} width="100px" height="100px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

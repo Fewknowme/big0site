@@ -32,8 +32,8 @@ const Home = () => {
       <ContentBlock
         type="left"
         title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
+        content={`A ${AboutContent.text.toLowerCase()}`}
+        // section={AboutContent.section}
         icon="graphs.svg"
         id="about"
       />
